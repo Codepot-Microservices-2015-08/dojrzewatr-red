@@ -1,13 +1,7 @@
 {
-    "pl": {
-        "this": "pl/devoxx/dojrzewatr",
+    "red": {
+        "this": "pl/codepot/dojrzewatr",
         "dependencies" : {
-            "prezentatr" : {
-                "path" : "pl/devoxx/prezentatr"
-            },
-            "butelkatr" : {
-                "path" : "pl/devoxx/butelkatr"
-            }
         }
     }
 }
