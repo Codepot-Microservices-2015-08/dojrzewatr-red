@@ -1,6 +1,6 @@
 {
     "red": {
-        "this": "pl/codepot/dojrzewatr",
+        "this": "foo/bar",
         "dependencies" : {
         }
     }
