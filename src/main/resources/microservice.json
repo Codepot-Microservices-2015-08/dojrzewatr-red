@@ -2,7 +2,12 @@
     "red": {
         "this": "pl/codepot/dojrzewatr-red",
         "dependencies" : {
-
+            "butelkatr-red" : {
+                path : "pl/codepot/butelkatr-red"
+            },
+            "prezentatr-red" : {
+                path : "pl/codepot/prezentatr-red"
+            }
         }
     }
 }
