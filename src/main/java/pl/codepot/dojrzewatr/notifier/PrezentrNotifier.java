@@ -4,12 +4,13 @@ import com.google.common.util.concurrent.ListenableFuture;
 import com.nurkiewicz.asyncretry.RetryExecutor;
 import com.ofg.infrastructure.web.resttemplate.fluent.ServiceRestClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import static com.netflix.hystrix.HystrixCommand.Setter.withGroupKey;
 import static com.netflix.hystrix.HystrixCommandGroupKey.Factory.asKey;
 
 
-
+@Component
 public class PrezentrNotifier {
     private final ServiceRestClient serviceRestClient;
     private final RetryExecutor retryExecutor;

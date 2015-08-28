@@ -3,6 +3,7 @@ package pl.codepot.dojrzewatr.notifier;
 import com.nurkiewicz.asyncretry.RetryExecutor;
 import com.ofg.infrastructure.web.resttemplate.fluent.ServiceRestClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import pl.codepot.dojrzewatr.brewing.model.Wort;
 
 import static com.netflix.hystrix.HystrixCommand.Setter.withGroupKey;
@@ -11,6 +12,7 @@ import static com.netflix.hystrix.HystrixCommandGroupKey.Factory.asKey;
 /**
  * Created by kedzior on 28.08.15.
  */
+@Component
 public class BootlerNotifier {
     private final ServiceRestClient serviceRestClient;
     private final RetryExecutor retryExecutor;

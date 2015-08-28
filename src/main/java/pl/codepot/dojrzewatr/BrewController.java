@@ -14,12 +14,16 @@ import pl.codepot.dojrzewatr.brewing.model.IngredientList;
 import javax.servlet.http.HttpServletResponse;
 
 @RestController
-
 @RequestMapping(value = "/brew", consumes = "application/vnd.pl.codepot.dojrzewatr.v1+json", produces = MediaType.APPLICATION_JSON_VALUE)
 public class BrewController {
     public static Logger log = LoggerFactory.getLogger(BrewController.class);
-    @Autowired
+
     private BrewService service;
+
+    @Autowired
+    public BrewController(BrewService service) {
+        this.service = service;
+    }
 
     @RequestMapping(method = RequestMethod.POST)
     public void addIngredients(@RequestBody IngredientList list, HttpServletResponse response) {
@@ -28,9 +32,4 @@ public class BrewController {
 
         response.setStatus(HttpServletResponse.SC_OK);
     }
-
-
-    //
-
-
 }
