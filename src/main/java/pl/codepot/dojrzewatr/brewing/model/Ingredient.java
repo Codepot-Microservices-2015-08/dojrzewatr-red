@@ -7,4 +7,11 @@ public class Ingredient {
     private String type;
     private Integer quantity;
 
+    @Override
+    public String toString() {
+        return "Ingredient{" +
+                "type='" + type + '\'' +
+                ", quantity=" + quantity +
+                '}';
+    }
 }

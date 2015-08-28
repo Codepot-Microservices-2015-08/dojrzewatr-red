@@ -12,4 +12,11 @@ public class IngredientList {
     public IngredientList(List<Ingredient> ingredients) {
         this.ingredients = ingredients;
     }
+
+    @Override
+    public String toString() {
+        return "IngredientList{" +
+                "ingredients=" + ingredients +
+                '}';
+    }
 }
